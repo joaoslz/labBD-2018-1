@@ -1,0 +1,32 @@
+package teste_jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TesteInserirRegistro {
+
+	public static void main(String[] args) throws SQLException {
+		
+		Connection connection = 
+				DriverManager.getConnection("jdbc:mysql://localhost/estoque", "root", "root" );
+		
+		Statement statement = connection.createStatement();
+		
+		
+		String insert = "insert into produtos (nome, descricao) "
+				         + "values ('Tablet 10 pol', 'Tablet de ultima geração')";
+		statement.execute(insert, Statement.RETURN_GENERATED_KEYS );
+		
+		ResultSet keys = statement.getGeneratedKeys();
+		
+		if (keys.next() ) {
+			int id = keys.getInt("id");
+			System.out.println("id " + id );
+		}
+		
+		connection.close();
+	}
+}

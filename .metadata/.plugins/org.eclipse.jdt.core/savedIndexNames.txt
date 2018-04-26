@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+C:\Users\joaoc\Documents\disciplinas\lab_bd-2018-codigos\.metadata\.plugins\org.eclipse.jdt.core
+1045666888.index
+2885681534.index
+129962543.index
