@@ -29,20 +29,29 @@ public class CategoriasDAO {
              
              try(ResultSet rs = stmt.getResultSet()) {
                  while(rs.next()) {
-                     int id = rs.getInt("id");
-                     String nome = rs.getString("nome");
-                     Categoria categoria = new Categoria(id, nome);
+                     Categoria categoria = montaCategoria(rs);
                      categorias.add(categoria);
                  }
              }
          }
          return categorias;
     }
+
+	private Categoria montaCategoria(ResultSet rs) throws SQLException {
+		int id = rs.getInt("id");
+		 String nome = rs.getString("nome");
+		 Categoria categoria = new Categoria(id, nome);
+		 
+		return categoria;
+	}
     
     public List<Produto> buscaProdutosDa(Categoria categoria) {
     	
     	return null;
     }
+    
+    
+    
     
     public List<Categoria> buscaCategoriasComProdutos() throws SQLException {
 
@@ -50,7 +59,7 @@ public class CategoriasDAO {
         Categoria ultima = null;
 
         String sql = "select c.id as c_id, c.nome as c_nome, p.id as p_id, p.nome as p_nome, p.descricao as p_descricao "
-        		+ "from categoria as c join produtos as p on p.categoria_id = c.id";
+        		+ "from categorias as c join produtos as p on p.categoria_id = c.id";
        
         try(PreparedStatement stmt = con.prepareStatement(sql)) {
             stmt.execute();
@@ -61,11 +70,13 @@ public class CategoriasDAO {
                      int idCategoria = rs.getInt("c_id");
                      String nomeCategoria = rs.getString("c_nome");
                 
+                     // cria a categoria apenas uma vez
                      if(ultima==null || !ultima.getNome().equals(nomeCategoria)) {
                          Categoria categoria = new Categoria(idCategoria, nomeCategoria);
                          categorias.add(categoria);
                          ultima = categoria;
                      }
+                     
                      int idDoProduto = rs.getInt("p_id");
                      String nomeDoProduto =rs.getString("p_nome");
                      String descricaoDoProduto = rs.getString("p_descricao");

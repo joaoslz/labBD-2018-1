@@ -17,7 +17,7 @@ public class TesteInsertProdutoDAO {
 
 		try (Connection conexao = new ConnectionPool().getConexao() ) {
 			
-			ProdutoDAO produtoDAO = new ProdutoDAO(conexao);
+			ProdutoDAO produtoDAO = new ProdutoDAO(conexao );
 
 			Produto produto = new Produto("SmartPhone", "tela de retina" );
 			

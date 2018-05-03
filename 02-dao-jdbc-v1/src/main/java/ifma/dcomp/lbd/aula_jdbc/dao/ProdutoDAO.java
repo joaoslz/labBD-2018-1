@@ -45,12 +45,13 @@ public class ProdutoDAO {
 		String sql = "select * from produto";
 
 		try (PreparedStatement statment = conexao.prepareStatement(sql)) {
+			
 			/*stmt.execute();
 			ResultSet resultSet = stmt.getResultSet();*/
 			
 			ResultSet resultSet = statment.executeQuery(sql);
 			
-			List<Produto> produtos = new ArrayList<>();
+			final List<Produto> produtos = new ArrayList<>();
 			
 			while (resultSet.next()) {
 				Produto produto = montaProduto(resultSet);
