@@ -4,22 +4,30 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
+import javax.persistence.NonUniqueResultException;
 import javax.persistence.PersistenceException;
+import javax.transaction.Transactional;
 
 import ifma.dcomp.lbd.pedidovenda.model.Produto;
 
 public class Produtos {
 
 
-	private EntityManager manager;
+	private final EntityManager manager;
 
-	
-	public Produto salva(Produto produto) {
-//		manager.getTransaction().begin();
-		Produto merge = manager.merge(produto);
-//		manager.getTransaction().commit();
+	public Produtos(EntityManager manager) {
+		this.manager = manager;
+	}
 
-		return merge;
+
+    public Produto salva(Produto produto) {
+		manager.getTransaction().begin();
+
+		Produto produtoSalvo = manager.merge(produto);
+
+		manager.getTransaction().commit();
+
+		return produtoSalvo;
 	}
 	
 
@@ -32,9 +40,7 @@ public class Produtos {
 			manager.remove(produto);
 			
 			manager.getTransaction().commit();
-//			manager.flush();
-//			manager.clear();
-		
+
 		} catch (PersistenceException e) {
 			manager.getTransaction().rollback();
 			throw new IllegalStateException("Produto não pode ser excluído.");
@@ -42,12 +48,19 @@ public class Produtos {
 	}
 
 	public Produto buscaPorSku(String sku) {
+
+
 		try {
-			return manager.createQuery("from Produto where upper(sku) = :sku", Produto.class)
-				.setParameter("sku", sku.toUpperCase())
-				.getSingleResult();
-			
-		} catch (NoResultException e) {
+			Produto produtoDoBanco =
+					manager
+					.createQuery("from Produto where upper(sku) = :sku", Produto.class)
+					.setParameter("sku", sku.toUpperCase())
+					.getSingleResult();
+
+			return produtoDoBanco;
+
+		} catch (NoResultException  | NonUniqueResultException e) {
+			e.printStackTrace();
 			return null;
 		}
 	}

@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.management.RuntimeErrorException;
+
 import ifma.dcom.lbd.financas.modelo.Conta;
 
 public class ContaDAO {
@@ -23,14 +25,17 @@ public class ContaDAO {
 			PreparedStatement ps = this.connection
 					.prepareStatement("insert into Conta (titular, banco, agencia, numero) "
 							           + "values (?,?,?,?)");
+			
 			ps.setString(1, conta.getTitular());
+			
 			ps.setString(2, conta.getBanco());
 			ps.setString(3, conta.getAgencia());
 			ps.setString(4, conta.getNumero());
 			ps.execute();
 			ps.close();
+			
 		} catch (SQLException e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException(e );		
 		}
 	}
 
@@ -139,6 +144,7 @@ public class ContaDAO {
 
 			ps.close();
 			return lista;
+			
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

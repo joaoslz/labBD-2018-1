@@ -20,8 +20,7 @@ import javax.persistence.Table;
 public class Cliente {
 
 	public Cliente() {  }
-	
-	
+
 	public Cliente(Endereco endereco) {
 		this.enderecos.add(endereco );
 	}
