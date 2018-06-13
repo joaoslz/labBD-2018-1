@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Objects;
 @Entity
 @Table(name = "cliente")
-public class Cliente {
+public abstract class Cliente {
 
     public Cliente() {
     }
@@ -26,9 +26,6 @@ public class Cliente {
 
     @Column(nullable = false, length = 100)
     private String email;
-
-    @Column(name = "doc_receita_federal", nullable = false, length = 14)
-    private String documentoReceitaFederal;
 
     @Enumerated(EnumType.STRING)
     @Column(length = 20)
@@ -60,14 +57,6 @@ public class Cliente {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getDocumentoReceitaFederal() {
-        return documentoReceitaFederal;
-    }
-
-    public void setDocumentoReceitaFederal(String documentoReceitaFederal) {
-        this.documentoReceitaFederal = documentoReceitaFederal;
     }
 
     public TipoPessoa getTipo() {
