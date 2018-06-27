@@ -8,14 +8,20 @@ import java.util.List;
 public class ClienteRepository {
 
     private final EntityManager manager;
+    private final GenericRepository<Cliente> genericRepository;
 
     public ClienteRepository(EntityManager manager) {
         this.manager = manager;
+        this.genericRepository = new GenericRepository<>(this.manager );
     }
 
 
-    public Cliente buscaPor(Long id) {
-        return this.manager.find(Cliente.class, id);
+    public void salva(Cliente cliente) {
+        this.genericRepository.salva(cliente );
+    }
+
+    public Cliente buscaPor(Integer id) {
+        return this.genericRepository.buscaPorId(Cliente.class, id);
     }
 
 
@@ -24,5 +30,15 @@ public class ClienteRepository {
                 "where upper(nome) like :nome", Cliente.class)
                 .setParameter("nome", nome.toUpperCase() + "%")
                 .getResultList();
+    }
+
+
+    public void exclui(Cliente cliente) {
+        manager.remove(cliente );
+    }
+
+
+    public void atualiza(Cliente cliente) {
+        manager.merge(cliente );
     }
 }

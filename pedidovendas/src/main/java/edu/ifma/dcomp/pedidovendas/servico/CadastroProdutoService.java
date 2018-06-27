@@ -25,7 +25,7 @@ public class CadastroProdutoService {
             throw new NegocioException("Já existe um produto com o SKU informado.");
         }
         manager.getTransaction().begin();
-        produto = repositorio.salvar(produto);
+        produto = repositorio.salva(produto);
         manager.getTransaction().commit();
 
         return produto;
