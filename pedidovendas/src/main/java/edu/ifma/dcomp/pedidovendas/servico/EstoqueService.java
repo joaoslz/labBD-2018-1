@@ -6,6 +6,7 @@ import edu.ifma.dcomp.pedidovendas.repositorio.PedidoRepository;
 import edu.ifma.dcomp.pedidovendas.util.EMFactory;
 
 import javax.persistence.EntityManager;
+import java.util.Set;
 
 public class EstoqueService  {
 
@@ -23,7 +24,7 @@ public class EstoqueService  {
 
 
 		pedido = this.repositorio.porId(pedido.getId());
-		
+
 		for (ItemPedido item : pedido.getItens()) {
 			item.getProduto().baixarEstoque(item.getQuantidade());
 		}
@@ -31,11 +32,11 @@ public class EstoqueService  {
 
 	public void retornarItensParaOEstoque(Pedido pedido) {
 		pedido = this.repositorio.porId(pedido.getId());
-		
-		for (ItemPedido item : pedido.getItens()) {
 
-			item.getId().getProduto().adicionaEstoque(item.getQuantidade() );
-		}
+		Set<ItemPedido> itens = pedido.getItens();
+
+		itens.forEach(item -> item.retornaParaOEstoque( ));
+
 	}
 	
 }

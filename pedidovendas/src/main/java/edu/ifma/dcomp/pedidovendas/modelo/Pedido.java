@@ -13,20 +13,26 @@ public class Pedido {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+
     @Column(name = "instante_criacao")
     private LocalDateTime instanteCriacao;
+
 
     @Column(name = "valor_desconto")
     private BigDecimal valorDesconto = BigDecimal.ZERO;
 
+
     @Column(name = "valor_frete")
     private BigDecimal valorFrete = BigDecimal.ZERO;
+
 
     @Column(columnDefinition = "text")
     private String observacoes;
 
+
     @OneToOne(mappedBy = "pedido")
     private Pagamento pagamento;
+
 
     @OneToMany(mappedBy = "id.pedido", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<ItemPedido> itens = new LinkedHashSet<>();
@@ -116,7 +122,7 @@ public class Pedido {
     }
 
     @Transient
-    public boolean isCancelavel() {
+    public boolean podeSerCancelado() {
         return this.isExistente() && !this.isCancelado();
     }
 
@@ -126,8 +132,8 @@ public class Pedido {
     }
 
     @Transient
-    public boolean isNaoCancelavel() {
-        return !this.isCancelavel();
+    public boolean naoPodeSerCancelado() {
+        return !this.podeSerCancelado();
     }
 
     @Transient

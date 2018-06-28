@@ -34,12 +34,13 @@ public class ProdutoRepository {
         }
     }
 
-    public Produto porSku(String sku) {
+    public Produto buscaPorSku(String sku) {
         try {
             return manager.createQuery("from Produto where upper(sku) = :sku",
                                         Produto.class)
                     .setParameter("sku", sku.toUpperCase())
                     .getSingleResult();
+
         } catch (NoResultException e) {
             return null;
         }

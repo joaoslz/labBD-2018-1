@@ -1,8 +1,12 @@
 package edu.ifma.dcomp.pedidovendas.repositorio;
 
+import edu.ifma.dcomp.pedidovendas.modelo.PagamentoCartao;
 import edu.ifma.dcomp.pedidovendas.modelo.Pedido;
+import edu.ifma.dcomp.pedidovendas.modelo.StatusPedido;
 
 import javax.persistence.EntityManager;
+import java.util.Arrays;
+import java.util.List;
 
 public class PedidoRepository {
 
@@ -25,6 +29,24 @@ public class PedidoRepository {
     }
 
 
+    public List<Pedido> finalizados() {
+
+        return manager
+                .createQuery("from Pedido p where p.status = :statusPedido", Pedido.class)
+                .setParameter("statusPedido", StatusPedido.EMITIDO)
+                .getResultList();
+
+    }
+
+
+    public List<Pedido> comPagamentoCartao() {
+
+        return manager
+                .createQuery("Select p From Pedido p where TYPE(p.pagamento) IN :tipoPagamento", Pedido.class)
+                .setParameter("tipoPagamento", Arrays.asList(PagamentoCartao.class) )
+                .getResultList();
+
+    }
 
 
 }

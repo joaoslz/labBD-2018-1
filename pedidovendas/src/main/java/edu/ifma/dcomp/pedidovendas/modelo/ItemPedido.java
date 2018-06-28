@@ -73,4 +73,7 @@ public class ItemPedido {
     }
 
 
+    public void retornaParaOEstoque() {
+        this.id.getProduto().adicionaEstoque(this.quantidade );
+    }
 }

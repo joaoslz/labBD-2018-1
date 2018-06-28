@@ -6,6 +6,7 @@ import edu.ifma.dcomp.pedidovendas.repositorio.PedidoRepository;
 import edu.ifma.dcomp.pedidovendas.util.EMFactory;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 
 public class CancelamentoPedidoService  {
 
@@ -16,7 +17,7 @@ public class CancelamentoPedidoService  {
     private final PedidoRepository repositorio;
 	private final EntityManager manager;
 
-	public CancelamentoPedidoService(PedidoRepository repositorio ) {
+	public CancelamentoPedidoService( ) {
 
 		this.manager = new EMFactory().getEntityManager();
 		this.repositorio = new PedidoRepository(manager );
@@ -25,14 +26,22 @@ public class CancelamentoPedidoService  {
 
 
 	public Pedido cancela(Pedido pedido) throws NegocioException {
+
+
+
 		pedido = this.repositorio.porId(pedido.getId());
 		
-		if (pedido.isNaoCancelavel() ) {
+		if (pedido.naoPodeSerCancelado() ) {
 
 			throw new NegocioException("Pedido não pode ser cancelado no status "
 					+ pedido.getStatus().getDescricao() + ".");
+
 		}
-		
+
+
+		EntityTransaction transacao = this.manager.getTransaction();
+		transacao.begin();
+
 		if (pedido.isEmitido()) {
 			this.estoqueService.retornarItensParaOEstoque(pedido );
 		}
@@ -40,6 +49,8 @@ public class CancelamentoPedidoService  {
 		pedido.setStatus(StatusPedido.CANCELADO );
 		
 		pedido = this.repositorio.salva(pedido );
+
+		transacao.commit();
 		
 		return pedido;
 	}

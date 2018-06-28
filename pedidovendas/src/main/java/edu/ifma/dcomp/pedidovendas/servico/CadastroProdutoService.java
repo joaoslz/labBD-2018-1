@@ -5,6 +5,7 @@ import edu.ifma.dcomp.pedidovendas.repositorio.ProdutoRepository;
 import edu.ifma.dcomp.pedidovendas.util.EMFactory;
 
 import javax.persistence.EntityManager;
+import java.util.List;
 
 public class CadastroProdutoService {
 
@@ -19,7 +20,7 @@ public class CadastroProdutoService {
 
     public Produto salva(Produto produto) throws NegocioException {
 
-        Produto produtoExistente = repositorio.porSku(produto.getSku() );
+        Produto produtoExistente = repositorio.buscaPorSku(produto.getSku() );
 
         if ( produtoExistente != null && !produtoExistente.equals(produto) ) {
             throw new NegocioException("Já existe um produto com o SKU informado.");
@@ -28,7 +29,21 @@ public class CadastroProdutoService {
         produto = repositorio.salva(produto);
         manager.getTransaction().commit();
 
+        // envia email
+        // fazer um log para auditoria
         return produto;
+
     }
 
+    public Produto buscaPorSku(String sku) {
+        return repositorio.buscaPorSku(sku);
+    }
+
+    public Produto porId(Integer id) {
+        return repositorio.porId(id);
+    }
+
+    public List<Produto> porNome(String nome) {
+        return repositorio.porNome(nome);
+    }
 }

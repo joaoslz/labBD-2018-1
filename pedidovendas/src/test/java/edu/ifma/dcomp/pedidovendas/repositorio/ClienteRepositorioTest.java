@@ -51,7 +51,7 @@ public class ClienteRepositorioTest {
     }
 
     @Test
-    public void deveEncontrarUsuarioPeloNome() {
+    public void deveEncontrarClientePeloNome() {
 
         Cliente cliente = ClienteBuilder.umCliente().comNome("João da Silva").constroi();
 
@@ -104,8 +104,8 @@ public class ClienteRepositorioTest {
         Assert.assertThat(clientes.size(), is(1));
         Assert.assertThat(clientes.get(0).getNome(), is("João da Silva") );
 
-        List<Cliente> listaClientes = clienteRepository.porNome("João Carlos");
-        Assert.assertTrue(listaClientes.isEmpty() );
+        clientes = clienteRepository.porNome("João Carlos");
+        Assert.assertTrue(clientes.isEmpty() );
     }
 
 }
