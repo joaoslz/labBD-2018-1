@@ -16,8 +16,8 @@
       <file leaf-file-name="ClienteRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/repositorio/ClienteRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="800">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
@@ -26,6 +26,8 @@
                 <element signature="e#684#685#0" expanded="true" />
                 <element signature="e#1003#1004#0" expanded="true" />
                 <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,7 +36,7 @@
       <file leaf-file-name="CancelamentoPedidoService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/servico/CancelamentoPedidoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="780">
               <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,16 +48,8 @@
       <file leaf-file-name="GenericRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/repositorio/GenericRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="240">
               <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding>
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -63,8 +57,8 @@
       <file leaf-file-name="PedidoBuilder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/builder/PedidoBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="1260">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,7 +69,7 @@
       <file leaf-file-name="PedidoRepositoryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/repositorio/PedidoRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="1400">
               <caret line="86" column="89" selection-start-line="80" selection-start-column="7" selection-end-line="86" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,8 +81,8 @@
       <file leaf-file-name="ClienteRepositorioTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/repositorio/ClienteRepositorioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="84" column="56" lean-forward="true" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
+            <state relative-caret-position="1180">
+              <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#903#904#0" expanded="true" />
@@ -103,7 +97,7 @@
       <file leaf-file-name="EstoqueService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/servico/EstoqueService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="520">
               <caret line="32" column="41" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,8 +109,8 @@
       <file leaf-file-name="ItemPedido.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/modelo/ItemPedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="940">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#724#725#0" expanded="true" />
@@ -126,8 +120,6 @@
                 <element signature="e#1115#1116#0" expanded="true" />
                 <element signature="e#1153#1154#0" expanded="true" />
                 <element signature="method#equals#0;class#ItemPedido#0" />
-                <element signature="e#1546#1547#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,18 +128,10 @@
       <file leaf-file-name="Pedido.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/modelo/Pedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="1020">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2694#2695#0" expanded="true" />
-                <element signature="e#2758#2759#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
-                <element signature="e#2880#2881#0" expanded="true" />
-                <element signature="e#2935#2936#0" expanded="true" />
-                <element signature="e#2978#2979#0" expanded="true" />
-                <element signature="e#3206#3207#0" expanded="true" />
-                <element signature="e#3235#3236#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,7 +140,7 @@
       <file leaf-file-name="PedidoRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/repositorio/PedidoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="480">
               <caret line="36" column="30" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -246,11 +230,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="487" />
-    <option name="y" value="230" />
-    <option name="width" value="563" />
-    <option name="height" value="464" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="2468" />
+    <option name="y" value="-9" />
+    <option name="width" value="1542" />
+    <option name="height" value="919" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -554,7 +538,8 @@
       <workItem from="1529530784286" duration="1929000" />
       <workItem from="1529587351952" duration="16443000" />
       <workItem from="1530017562071" duration="13897000" />
-      <workItem from="1530205770813" duration="14478000" />
+      <workItem from="1530205770813" duration="15681000" />
+      <workItem from="1533245520984" duration="611000" />
     </task>
     <servers />
   </component>
@@ -591,16 +576,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51829000" />
+    <option name="totallyTimeSpent" value="53643000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="1975" y="-7" width="1233" height="735" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info id="DB Browser" order="6" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.33050847" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="DB Execution Console" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="0" />
@@ -621,6 +604,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.33050847" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="right" id="Commander" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
@@ -635,6 +619,7 @@
       <window_info id="Designer" order="1" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.6356209" />
+      <window_info anchor="right" id="Commander" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info id="DB Browser" order="6" />
@@ -642,7 +627,6 @@
       <window_info id="Project Explorer" order="2" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="5" />
-      <window_info anchor="right" id="Commander" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32888147" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.33050847" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
@@ -651,7 +635,6 @@
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="2" weight="0.32959184" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="8" />
       <window_info id="Job Explorer" order="4" />
       <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.39285713" />
       <window_info anchor="right" id="Database" order="1" />
@@ -660,6 +643,7 @@
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="bottom" id="Console" order="1" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -684,13 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="54" column="65" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,12 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="18" selection-start-line="5" selection-end-line="6" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,8 +722,6 @@
             <element signature="e#1115#1116#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="method#equals#0;class#ItemPedido#0" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,9 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,8 +753,6 @@
             <element signature="e#1115#1116#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="method#equals#0;class#ItemPedido#0" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -849,8 +801,6 @@
             <element signature="e#1115#1116#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="method#equals#0;class#ItemPedido#0" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,9 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,9 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,9 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,10 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="25" column="19" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,9 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,13 +931,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/builder/LocacaoBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/builder/LocacaoBuilder.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/servico/NegocioException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1018,9 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,13 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,15 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,18 +964,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding>
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/servico/CancelamentoPedidoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="780">
           <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1079,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/modelo/ItemPedido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="940">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
@@ -1090,15 +990,13 @@
             <element signature="e#1115#1116#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="method#equals#0;class#ItemPedido#0" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/servico/EstoqueService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="520">
           <caret line="32" column="41" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1108,41 +1006,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/repositorio/GenericRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="240">
           <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/modelo/Pedido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="1020">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2694#2695#0" expanded="true" />
-            <element signature="e#2758#2759#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
-            <element signature="e#2935#2936#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3206#3207#0" expanded="true" />
-            <element signature="e#3235#3236#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/builder/PedidoBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="1260">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1151,7 +1033,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/repositorio/PedidoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="480">
           <caret line="36" column="30" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1165,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/repositorio/PedidoRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="1400">
           <caret line="86" column="89" selection-start-line="80" selection-start-column="7" selection-end-line="86" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1175,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/ifma/dcomp/pedidovendas/repositorio/ClienteRepositorioTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="84" column="56" lean-forward="true" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
+        <state relative-caret-position="1180">
+          <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#903#904#0" expanded="true" />
@@ -1189,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/ifma/dcomp/pedidovendas/repositorio/ClienteRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="800">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
@@ -1199,6 +1081,8 @@
             <element signature="e#684#685#0" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
             <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
           </folding>
         </state>
       </provider>
